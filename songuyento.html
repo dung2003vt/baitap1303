@@ -6,21 +6,21 @@
 </head>
 <body>
 <script>
-    let count = 0;
+    let souoc = 0;
     let snt = 0;
-    let number = parseInt(prompt("Nhập n số nguyên tố đầu tiên: "));
-    for (let i = 2; i < 100; i++) {
-        if (snt < number) {
+    let sodem = parseInt(prompt("Nhập n số nguyên tố đầu tiên: "));
+    for (let i = 2; i < 1000; i++) {
+        if (snt < sodem) {
             for (let j = 1; j <= i; j++) {
                 if (i % j === 0) {
-                    count += 1;
+                    souoc += 1;
                 }
             }
-            if (count === 2) {
+            if (souoc === 2) {
                 document.write(i + "<br>");
                 snt += 1;
             }
-            count = 0;
+            souoc = 0;
         } else {
             break;
         }
